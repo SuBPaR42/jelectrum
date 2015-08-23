@@ -32,12 +32,13 @@ This is done because I've found things to be more reliable if the database is a 
 get restarted.  It is thus less likely to corrupt the datastore and be a problem.
 
 Anyways, to run it, go into (assuming you are currently in jelectrum directory):
+```
     $ screen -mdS LNET
     $ screen -r LNET
     $ cd cpp
     $ make
     $ ./levelnet /location/of/leveldb/here
-
+```
 (replace that path with where you want the leveldb to live)
 
 This will run th leveldb network server on port 8844.  There is absolutely no security or checking.
